@@ -1,43 +1,42 @@
-# ❌⭕ Tic-Tac-Toe
+# 🌀 Tic-Tac-Toe Game
 
-A fun and interactive **Tic-Tac-Toe** game built using **HTML, CSS, and JavaScript**.  
-Play against a friend or challenge yourself to implement an AI version!  
-This project demonstrates DOM manipulation, event handling, and game logic — perfect for beginners in web development.
+A fun and interactive **Tic-Tac-Toe** game built using **HTML, CSS & JavaScript**.  
+Play against another person and enjoy the classic 3×3 grid game right in your browser.
 
 ---
 
 ## 🎮 Features
 
-- Classic **3×3 grid** gameplay.  
-- **Two-player mode** (Player X and Player O).  
-- Displays the **current player’s turn**.  
-- Automatically detects **win** or **draw** conditions.  
-- Option to **restart** the game anytime.  
-- Responsive layout for desktop and mobile devices.
+- Two-player mode with alternating turns.  
+- Input fields for **Player 1** and **Player 2** names.  
+- Visual highlight to show whose turn it is.  
+- Detects win or draw conditions automatically.  
+- One-line highlight appears across the winning path when someone wins.  
+- Clean and simple UI, easy to understand and modify.
 
 ---
 
 ## 🧰 Technologies Used
 
-- **HTML5** → Game structure and elements  
-- **CSS3** → Styling, layout, and animations  
-- **JavaScript (ES6)** → Game logic, event listeners, and result handling  
+- **HTML5** — for the markup and structure.  
+- **CSS3** — for styling, layout and animations (winning line).  
+- **JavaScript (vanilla)** — for game logic, event handling, DOM manipulation.
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-All you need is a **web browser** — no installation or extra setup required.
+### Prerequisites  
+You just need a modern web browser. No special installation required.
 
-### Steps to Run
+### How to run  
 ```bash
-# Clone this repository
+# Clone the repository
 git clone https://github.com/HariomGundale/Tic-Tac-Toe.git
 
-# Move into the project directory
+# Navigate into project folder
 cd Tic-Tac-Toe
-```
+
 
 ## 📁 Project Structure
 
@@ -52,19 +51,21 @@ Tic-Tac-Toe/
 
 ## 🧠 How It Works
 
-1. The board is a 3×3 grid of clickable cells.
+1. Players enter their names (Player 1 and Player 2).
 
-2. Players take turns placing their symbol (❌ or ⭕).
+2. Player 1 (X) starts. The UI highlights Player 1’s name to show turn.
 
-3. After each move:
+3. Player clicks a cell (empty) to place their mark (X or O).
 
-     -The script checks for a winning combination (rows, columns, or diagonals).
+4. After each move the script checks:
 
-     -If found → the winner is announced.
+     - If a win condition is met → the game ends, winning line is drawn across the path, win message displayed.
 
-     -If all cells are filled and no winner → it’s a draw.
+     - If no empty cells left and no win → it’s a draw.
 
-4. The Reset button clears the board and starts a new game.
+     - If no empty cells left and no win → it’s a draw.
+
+5. A Restart button clears the board, resets turns, removes highlight/line, and allows fresh play.
 
 ## 👤 Author
 
