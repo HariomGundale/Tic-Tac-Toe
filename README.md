@@ -37,6 +37,8 @@ git clone https://github.com/HariomGundale/Tic-Tac-Toe.git
 # Navigate into project folder
 cd Tic-Tac-Toe
 
+```
+
 
 ## 📁 Project Structure
 
