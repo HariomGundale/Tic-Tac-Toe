@@ -5,6 +5,11 @@ Play against another person and enjoy the classic 3×3 grid game right in your b
 
 ---
 
+## 🌐 Live Demo
+🎮 [Play Tic-Tac-Toe](https://hariomgundale.github.io/Tic-Tac-Toe/)  
+
+---
+
 ## 🎮 Features
 
 - Two-player mode with alternating turns.  
