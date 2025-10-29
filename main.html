@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="newgame hide">
-        <p class="msg">Winner</p>
-        <button id="new-btn">New Game</button>
+  <h1>❌⭕ Tic-Tac-Toe</h1>
+
+  <div class="player-inputs">
+    <input type="text" id="player1" placeholder="Enter Player 1 name">
+    <input type="text" id="player2" placeholder="Enter Player 2 name">
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <div id="players">
+    <p id="p1Display" class="active">Player 1: <span id="p1Name">-</span> (X)</p>
+    <p id="p2Display">Player 2: <span id="p2Name">-</span> (O)</p>
+  </div>
+
+  <div class="board-container">
+    <div class="board" id="board">
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <div class="win-line" id="winLine"></div>
     </div>
-    <main>
-        <h1>TIC-TAC-TOE</h1>
-        <div class="conatiner-game">
-            <div class="game">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-            </div>
-        </div>
-    </main>
-    <div class="resetgame">
-        <button id="regame">Reset</button>
-    </div>
-    <script src="app.js"></script>
+  </div>
+
+  <p id="status"></p>
+
+  <button id="resetBtn">Restart Game</button>
+
+  <script src="app.js"></script>
 </body>
 </html>

@@ -68,6 +68,6 @@ Tic-Tac-Toe/
 
 ## 👤 Author
 
-Hariom Shrikrishna Gundale
+Hariom Gundale
 
 If you like this project, please ⭐ star the repository and share it with your friends!

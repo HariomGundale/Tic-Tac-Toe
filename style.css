@@ -1,82 +1,101 @@
-*{
-    padding: 0px;
-    margin: 0px;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0d1117;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
 }
 
-body{
-    text-align: center;
-    background-color: #9bc4a1;
+h1 {
+  color: #00aaff;
+  margin-bottom: 15px;
 }
 
-.conatiner-game{
-  height: 70vh;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-}
-
-.game{
-  height: 60vmin;
-  width: 60vmin;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5vmin;
-}
-
-.box{
-  height: 18vmin;
-  width: 18vmin;
-  border-radius: 1rem;
+.player-inputs input {
+  padding: 8px 12px;
+  margin: 5px;
   border: none;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-  font-size: 8vmin;
-  color: #7f9ca1;
-  background-color: #d1ebc3;
+  border-radius: 5px;
 }
 
-#new-btn{
-    padding: 1rem;
-  font-size: 1.25rem;
-  background-color: #191913;
-  color: #fff;
-  border-radius: 1rem;
+.player-inputs button {
+  padding: 8px 15px;
   border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.newgame{
-   height: 100vmin;
+#players p {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+#players .active {
+  background-color: #007bff;
+  box-shadow: 0 0 10px #007bff;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  position: relative;
+}
+
+.cell {
+  width: 95px;
+  height: 95px;
+  background: #161b22;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 4rem;
+  font-size: 2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-.resetgame{
-    height: 10vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 4rem;
+.cell:hover {
+  background: #1e232b;
 }
 
-#regame{
-      padding: 1rem;
-  font-size: 1.25rem;
-  background-color: #191913;
-  color: #fff;
-  border-radius: 1rem;
+.win-line {
+  position: absolute;
+  width: 300px;
+  height: 4px;
+  background: #00ff88;
+  top: 0;
+  left: 0;
+  transform-origin: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+#status {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+#resetBtn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff4757;
   border: none;
-}
-
-.msg{
-    font-size: 2rem;
-}
-
-.hide{
-    display: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
